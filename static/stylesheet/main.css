@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+:root {
+    --dark-main-bg-color:  #1D262D;
+    --dark-main-font-color: #4D818C;
+    --dark-main-border-color: #254B59;
+    --dark-topbar-bg-color: #31414D;
+    --dark-topbar-font-color: #F2E9D8;
+    --topbar-font-size: 24px;
+    --topbar-font-family: 'Ubuntu', sans-serif;
+}
+icon {
+    --icon-top-size: 32px;
+    --icon-left-size: 24px;
+}
+html, body {
+    background-color: var(--dark-main-bg-color);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+topbar {
+    width: 100%;
+    background-color: var(--dark-topbar-bg-color);
+}
+.flex-container {
+    display: flex;
+}
+topbar>.flex-container .left {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+    width: 40%;
+}
+topbar>div.flex-container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    color: var(--dark-topbar-font-color);
+    font-size: var(--topbar-font-size);
+    font-family: var(--topbar-font-family);
+}
+div.flex-container>icon.github-icon {
+    margin-top: 10px;
+    height: auto;
+    width: var(--icon-top-size);
+}
+div.flex-container.left>ul {
+    font-weight: 700;
+}
+::marker {
+    background-color: #4D818C;
+}
